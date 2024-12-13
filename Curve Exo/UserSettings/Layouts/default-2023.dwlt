@@ -74,7 +74,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 116
+=======
+  controlID: 53
+>>>>>>> Damien
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +253,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 50
+=======
+  controlID: 54
+>>>>>>> Damien
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -275,7 +283,11 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
+<<<<<<< HEAD
   controlID: 51
+=======
+  controlID: 55
+>>>>>>> Damien
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -422,7 +434,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Scripts/Utils
+=======
+    - Assets/Animation
+>>>>>>> Damien
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -432,16 +448,26 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Scripts/Utils
+=======
+  - Assets/Animation
+>>>>>>> Damien
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Ecole\Prog_Cours\Prog2\Unity\CurveDamienEnzo\Curve Exo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 2c770000
     m_LastClickedID: 30508
     m_ExpandedIDs: 00000000ce760000247700002877000000ca9a3b
+=======
+    m_SelectedIDs: 687d0000
+    m_LastClickedID: 32104
+    m_ExpandedIDs: 00000000027d000000ca9a3b
+>>>>>>> Damien
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -470,7 +496,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ce760000
+=======
+    m_ExpandedIDs: 00000000027d0000
+>>>>>>> Damien
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +546,7 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 6}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -618,7 +648,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 7a770000
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: d6f1ffffe0faffff
+=======
+      m_ExpandedIDs: e8faffff
+>>>>>>> Damien
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1096,9 +1130,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -7.1234922, y: -0.70580864, z: -24.826916}
+    m_Target: {x: -3.5944479, y: -5.9552317, z: -26.046486}
     speed: 2
-    m_Value: {x: -7.1234922, y: -0.70580864, z: -24.826916}
+    m_Value: {x: -3.5944479, y: -5.9552317, z: -26.046486}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1144,9 +1178,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.040900983, y: 0.9458627, z: -0.13166256, w: -0.2938332}
+    m_Target: {x: -0.047671773, y: 0.93810296, z: -0.14351729, w: -0.31160554}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: -0.04090094, y: 0.9458617, z: -0.13166243, w: -0.29383287}
+=======
+    m_Value: {x: -0.047671653, y: 0.93810064, z: -0.14351693, w: -0.31160477}
+>>>>>>> Damien
   m_Size:
     m_Target: 13.15
     speed: 2
