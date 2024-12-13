@@ -5,26 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638696861856433844
-    m_Hash: 2773492828
-=======
-      ticks: 638696915334912061
-    m_Hash: 2921592027
->>>>>>> Damien
+      ticks: 638696918468072602
+    m_Hash: 3730130058
   m_LockFileStatus:
     m_FilePath: D:/Ecole/Prog_Cours/Prog2/Unity/CurveDamienEnzo/Curve Exo/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-<<<<<<< HEAD
-      ticks: 638696861856433844
-    m_Hash: 285343872
-=======
-      ticks: 638696915335016933
-    m_Hash: 3216798493
->>>>>>> Damien
+      ticks: 638696918468082673
+    m_Hash: 3610766786
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -321,7 +311,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.7.0
   source: 1
-  resolvedPath: C:\Users\PUEC1602\Documents\GitHub\CurveDamienEnzo\Curve Exo\Library\PackageCache\com.unity.inputsystem@1.7.0
+  resolvedPath: D:\Ecole\Prog_Cours\Prog2\Unity\CurveDamienEnzo\Curve Exo\Library\PackageCache\com.unity.inputsystem@1.7.0
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
