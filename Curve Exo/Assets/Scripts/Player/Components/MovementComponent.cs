@@ -8,12 +8,15 @@ using UnityEngine.Tilemaps;
 public class MovementComponent : MonoBehaviour
 {
     public event Action<Vector2> onMove = null;
-    [SerializeField] float moveSpeed = 2.0f, rotateSpeed = 50.0f;
+    [SerializeField] float moveSpeed = 2.0f, rotateSpeed = 50.0f, jumpForce = 3.0f;
     [SerializeField] bool sprinting = false;
     [SerializeField] Rigidbody rb = null;
+    [SerializeField] LayerMask mask = 0;
+
     InputsComponent inputRef = null;
-    float current = 0.0f, maxTime = 1.0f;
-    bool jump = false;
+    AnimationComponent animRef = null;
+    float currentRun = 0.0f, maxTime = 1.0f;
+    bool canJump = true;
 
     float MoveValue => moveSpeed * Time.deltaTime;
     float RotateValue => rotateSpeed * Time.deltaTime;
@@ -23,6 +26,7 @@ public class MovementComponent : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         inputRef = GetComponent<InputsComponent>();
+        animRef = GetComponent<AnimationComponent>();
 
     }
 
@@ -31,15 +35,26 @@ public class MovementComponent : MonoBehaviour
         Move();
         Rotate();
 
-        if (jump)
-            UpdateTime();
+        CheckJump();
     }
 
     void Move()
     {
         Vector2 _value = inputRef.Move.ReadValue<Vector2>();
 
-        float _multiplicator = sprinting && _value.y >= 0.0f ? 2.0f : 1.0f;
+        float _multiplicator = 1.0f;
+
+        if (sprinting && _value.y > 0.0f)
+        {
+            currentRun += Time.deltaTime;
+            currentRun = currentRun >= 1.0f ? 1.0f : currentRun;
+            _multiplicator += EaseCubicCurves.EaseInCubic(currentRun);
+        }
+        else
+        {
+            currentRun = 0.0f;
+            sprinting = false;
+        }
 
         onMove?.Invoke(_value * _multiplicator);
 
@@ -66,17 +81,31 @@ public class MovementComponent : MonoBehaviour
 
     public void Jump()
     {
+        if (!canJump) return;
+        jumpAnim();
+
+
+        rb.AddForce(0.0f, 50.0f * jumpForce, 0.0f);
+        Invoke(nameof(jumpAnim), 0.8f);
 
     }
 
-    void UpdateTime()
+    private void jumpAnim()
     {
-        current += Time.deltaTime;
-        if (current >= maxTime)
-        {
-            current = 0.0f;
-            jump = false;
-        }
+        animRef.UpdateJumpParam();
     }
-    public void SetJump(bool _value) => jump = _value;
+
+    void CheckJump()
+    {
+        Ray _ray = new Ray(transform.position + transform.up * 0.1f, -transform.up);
+        bool _hit = Physics.Raycast(_ray,0.2f,mask);
+        canJump = _hit;
+
+        //if (_hit)
+        //    Debug.Log("GROUND");
+        //else
+        //    Debug.Log("AIR");
+
+        //Debug.DrawRay(_ray.origin, _ray.direction * 0.2f);
+    }
 }

@@ -29,6 +29,6 @@ public class Player : MonoBehaviour
 
         movement.onMove += anims.UpdateMoveParam;
         inputs.Sprint.performed += (e) => movement.ToggleSprint();
-        inputs.Jump.performed += (e) => movement.SetJump(true);
+        inputs.Jump.performed += (e) => movement.Jump();
     }
 }

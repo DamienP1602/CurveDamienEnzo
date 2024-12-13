@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/SceneDamien.unity
-=======
-- path: Assets/Scenes/SceneEnzo.unity
->>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
