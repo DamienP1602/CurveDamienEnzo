@@ -10,7 +10,7 @@ public class EaseCubicCurves
     /// </summary>
     /// <param name="_t">Normalized value beetwen 0 and 1 for time progress</param>
     /// <returns>Interpolated value</returns>
-    static float EaseInCubic(float _t)
+    static public float EaseInCubic(float _t)
     {
         return _t * _t * _t;
     }
@@ -21,7 +21,7 @@ public class EaseCubicCurves
     /// </summary>
     /// <param name="_t">Normalized value beetwen 0 and 1 for time progress</param>
     /// <returns>Interpolated value</returns>
-    static float EaseOutCubic(float _t)
+    static public float EaseOutCubic(float _t)
     {
         return 1 - Mathf.Pow(1 - _t, 3);
     }
@@ -32,7 +32,7 @@ public class EaseCubicCurves
     /// </summary>
     /// <param name="_t">Normalized value beetwen 0 and 1 for time progress</param>
     /// <returns>Interpolated value</returns>
-    static float EaseInOutCubic(float _t)
+    static public float EaseInOutCubic(float _t)
     {
         return _t < 0.5f ? 4 * _t * _t * _t : 1 - Mathf.Pow(-2 * _t + 2, 3) / 2;
     }
