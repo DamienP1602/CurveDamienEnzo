@@ -10,24 +10,11 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] bool useOutFunc = false;
     [SerializeField] bool useInOutFunc = false;
 
-    [SerializeField] bool useUpForward = false;
-    [SerializeField] bool useRightForward = false;
-    //[SerializeField] bool useUpForward = false;
-
-    [SerializeField] bool useUpForwardOscillation = false;
-    [SerializeField] bool useRightForwardOscillation = false;
-    //[SerializeField] bool useUpForwardOscillation = false;
-
-    [SerializeField] bool inverseDirection = false;
-
     [SerializeField] bool canMove = false;
 
 
 
     [SerializeField] float speed = 5f;
-    [SerializeField] float frequency = 2f;
-    [SerializeField] float amplitude = 5f;
-    [SerializeField] float interpolatedValue = 0f;
     [SerializeField] float easedT = 0f;
 
     [SerializeField] Vector3 startPos = Vector3.zero;
@@ -44,68 +31,18 @@ public class MovingPlatform : MonoBehaviour
     void Update()
     {
         IncreaseTimer();
-        //Move();
         LerpTest();
     }
 
     private void IncreaseTimer()
     {
         timer += Time.deltaTime;
-        //interpolatedValue = Mathf.PingPong(timer, 1f);
     }
 
-    void Move()
-    {
-
-        if (!canMove) return;
-
-        //float _t = Mathf.Clamp01(interpolatedValue);
-        //float _easedT = 0f;
-        //if (useInFunc) _easedT = InFunc(_t);
-        //if (useOutFunc) _easedT = OutFunc(_t);
-        //if (useInOutFunc) _easedT = InOutFunc(_t);
-
-        //Vector3 _linearMovement = Vector3.zero;
-        //if (useUpForward)
-        //    _linearMovement = startPos + (inverseDirection ? -transform.up : transform.up) * speed * _easedT;
-        //if (useRightForward)
-        //    _linearMovement = startPos + (inverseDirection ? -transform.right : transform.right) * speed * _easedT;
-
-        //float _oscillation = Mathf.Sin(frequency * 2f * Mathf.PI * _t) * amplitude;
-        //Vector3 _oscillationOffset = transform.up * _oscillation;
-
-        //transform.position = _linearMovement + _oscillationOffset;
-
-        float _t = Mathf.Clamp01(interpolatedValue);
-        float _easedT = 0f;
-        if (useInFunc) _easedT = InFunc(_t);
-        if (useOutFunc) _easedT = OutFunc(_t);
-        if (useInOutFunc) _easedT = InOutFunc(_t);
-
-        Vector3 _linearMovement = Vector3.zero;
-        if (useUpForward)
-            _linearMovement = startPos + (inverseDirection ? -transform.forward : transform.forward) * speed * _easedT;
-        if (useRightForward)
-            _linearMovement = startPos + (inverseDirection ? -transform.right : transform.right) * speed * _easedT;
-
-        float _oscillation = Mathf.Sin(frequency * 2f * Mathf.PI * _t) * amplitude;
-        //Vector3 _oscillationOffset = transform.up * _oscillation;
-
-        Vector3 _oscillationOffset = Vector3.zero;
-        if (useUpForwardOscillation)
-            _oscillationOffset = transform.up * _oscillation;
-        if (useRightForwardOscillation)
-            _oscillationOffset = transform.right * _oscillation;
-
-        transform.position = _linearMovement + _oscillationOffset;
-
-    }
 
     void LerpTest()
     {
         if (!canMove) return;
-
-
 
         float _t = timer * speed;
         easedT = 0f;
