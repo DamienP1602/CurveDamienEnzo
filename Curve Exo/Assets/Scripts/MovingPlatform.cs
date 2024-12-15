@@ -11,6 +11,7 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] bool useInOutFunc = false;
 
     [SerializeField] bool canMove = false;
+    [SerializeField] bool useDebugs = true;
 
 
 
@@ -77,9 +78,10 @@ public class MovingPlatform : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if(!useDebugs) return;
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(startPos, 5f);
+        Gizmos.DrawWireSphere(startPos, 1f);
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(finalPos, 5f);
+        Gizmos.DrawWireSphere(finalPos, 1f);
     }
 }
