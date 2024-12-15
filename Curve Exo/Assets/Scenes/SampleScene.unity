@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 304844476}
   - component: {fileID: 304844475}
   - component: {fileID: 304844474}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 315344168}
   - component: {fileID: 315344167}
   - component: {fileID: 315344166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   - component: {fileID: 377410320}
   - component: {fileID: 377410319}
   - component: {fileID: 377410318}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1Elevator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   - component: {fileID: 450959893}
   - component: {fileID: 450959892}
   - component: {fileID: 450959891}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 1Elevator (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 500786025}
   - component: {fileID: 500786024}
   - component: {fileID: 500786023}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -960,7 +960,7 @@ GameObject:
   - component: {fileID: 1082538759}
   - component: {fileID: 1082538758}
   - component: {fileID: 1082538757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ GameObject:
   - component: {fileID: 1106522019}
   - component: {fileID: 1106522018}
   - component: {fileID: 1106522017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1174,7 +1174,7 @@ GameObject:
   - component: {fileID: 1147100759}
   - component: {fileID: 1147100758}
   - component: {fileID: 1147100757}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1370,7 +1370,7 @@ GameObject:
   - component: {fileID: 1285870077}
   - component: {fileID: 1285870076}
   - component: {fileID: 1285870075}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,7 +1477,7 @@ GameObject:
   - component: {fileID: 1354819773}
   - component: {fileID: 1354819772}
   - component: {fileID: 1354819771}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 1420938711}
   - component: {fileID: 1420938710}
   - component: {fileID: 1420938709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   - component: {fileID: 1511502196}
   - component: {fileID: 1511502195}
   - component: {fileID: 1511502194}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1798,7 +1798,7 @@ GameObject:
   - component: {fileID: 1844630920}
   - component: {fileID: 1844630919}
   - component: {fileID: 1844630918}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2048,7 +2048,7 @@ GameObject:
   - component: {fileID: 1943395618}
   - component: {fileID: 1943395617}
   - component: {fileID: 1943395616}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2156,7 +2156,7 @@ GameObject:
   - component: {fileID: 1960384888}
   - component: {fileID: 1960384887}
   - component: {fileID: 1960384886}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MovingPlatform (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2419,6 +2419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plane
       objectReference: {fileID: 0}
+    - target: {fileID: 5109963218345433624, guid: 67de918624ea4b64da7b71962f446c82, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2437,7 +2441,7 @@ GameObject:
   - component: {fileID: 2093172463}
   - component: {fileID: 2093172462}
   - component: {fileID: 2093172461}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MovingPlatform (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
